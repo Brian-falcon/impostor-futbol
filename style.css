@@ -1,0 +1,191 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.7);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+    color: #ffd700;
+    text-shadow: 2px 2px 6px #000;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #00bfff;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 80%;
+    padding: 14px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 14px 30px;
+    margin: 12px 5px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff4e50, #f9d423);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.name-input,
+.create-room,
+.join-room {
+    margin: 25px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+#playerList {
+    text-align: left;
+    margin: 25px 0;
+}
+
+#playerList h3 {
+    color: #00ffcc;
+    margin-bottom: 12px;
+}
+
+#playerList p {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playerList button {
+    padding: 6px 12px;
+    font-size: 1em;
+    background: #ff4e50;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 2px solid #00bfff;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Game Area */
+#gameArea {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 50px 20px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+
+#gameArea h2 {
+    font-size: 2.5em;
+    color: #00bfff;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 6px #000;
+}
+
+#gameArea p {
+    font-size: 1.7em;
+    margin: 15px 0;
+    color: #fff;
+}
+
+/* Imagenes del futbolista o impostor mucho más grandes */
+.futbolista-img {
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 50%;          /* ocupa todo el ancho del contenedor */
+    max-width: 1000px;     /* límite máximo para pantallas grandes */
+    height: auto;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.futbolista-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 35px 80px rgba(0,0,0,1);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 15px;
+    }
+    input[type="text"], input[type="number"] {
+        width: 100%;
+    }
+    #gameArea {
+        padding: 35px 15px;
+    }
+    #gameArea h2 {
+        font-size: 2.2em;
+    }
+    #gameArea p {
+        font-size: 1.5em;
+    }
+    .futbolista-img {
+        max-width: 95%;
+    }
+}
+ul {
+  list-style-type: none; /* Quita los puntos */
+  padding-left: 0;       /* Elimina sangría izquierda */
+  margin: 0;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impostor Futbolistas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Impostor Futbolistas</h1>
+
+    <div class="name-input">
+        <label>Tu nombre:
+            <input type="text" id="playerName" placeholder="Ingresa tu nombre">
+        </label>
+    </div>
+
+    <div class="create-room">
+        <h2>Crear Sala</h2>
+        <label>Cantidad de impostores:
+            <input type="number" id="numImpostores" min="1" max="3" value="1">
+        </label>
+        <button id="createRoomBtn">Crear Sala</button>
+    </div>
+
+    <div class="join-room">
+        <h2>Unirse a Sala</h2>
+        <input type="text" id="joinRoomCode" placeholder="Código de sala">
+        <button id="joinRoomBtn">Unirse</button>
+    </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
